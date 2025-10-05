@@ -18,6 +18,7 @@ local default_config = {
     cmp = true,
     gitsigns = true,
     treesitter = true,
+    snacks = true,
   },
   highlight_overrides = {},
 }
@@ -135,6 +136,16 @@ local function apply_transparency(groups)
   groups.TelescopePromptBorder.bg = "NONE"
   groups.TelescopePromptTitle.bg = "NONE"
   groups.WhichKeyFloat.bg = "NONE"
+  groups.SnacksNotifierDebug.bg = "NONE"
+  groups.SnacksNotifierBorderDebug.bg = "NONE"
+  groups.SnacksNotifierError.bg = "NONE"
+  groups.SnacksNotifierBorderError.bg = "NONE"
+  groups.SnacksNotifierInfo.bg = "NONE"
+  groups.SnacksNotifierBorderInfo.bg = "NONE"
+  groups.SnacksNotifierTrace.bg = "NONE"
+  groups.SnacksNotifierBorderTrace.bg = "NONE"
+  groups.SnacksNotifierWarn.bg = "NONE"
+  groups.SnacksNotifierBorderWarn.bg = "NONE"
 end
 
 local function apply_highlight_overrides(groups)
@@ -176,6 +187,10 @@ local function filter_integrations(groups)
     end
     
     if not M.config.integrations.treesitter and group:match("@") then
+      should_include = false
+    end
+    
+    if not M.config.integrations.snacks and group:match("Snacks") then
       should_include = false
     end
     

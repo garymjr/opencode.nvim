@@ -96,6 +96,7 @@ M.theme = {
     syntaxType = "#e5c07b",
     syntaxOperator = "#56b6c2",
     syntaxPunctuation = "#eeeeee",
+    rainbow = { "#e06c75", "#f5a742", "#7fd88f", "#56b6c2", "#9d7cd8", "#fab283" },
   },
   light = {
     primary = "#3b7dd8",
@@ -148,6 +149,7 @@ M.theme = {
     syntaxType = "#b0851f",
     syntaxOperator = "#318795",
     syntaxPunctuation = "#1a1a1a",
+    rainbow = { "#d1383d", "#d68c27", "#3d9a57", "#318795", "#7b5bb6", "#3b7dd8" },
   },
 }
 

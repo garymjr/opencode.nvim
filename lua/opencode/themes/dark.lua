@@ -402,6 +402,62 @@ M.groups = {
   CmpItemKindEvent = { fg = colors.accent },
   CmpItemKindOperator = { fg = colors.syntaxOperator },
   CmpItemKindTypeParameter = { fg = colors.syntaxType },
+  
+  -- Snacks.nvim integration
+  SnacksNotifierDebug = { fg = colors.text, bg = colors.background },
+  SnacksNotifierBorderDebug = { fg = colors.borderSubtle, bg = colors.background },
+  SnacksNotifierIconDebug = { fg = colors.textMuted },
+  SnacksNotifierTitleDebug = { fg = colors.textMuted },
+  SnacksNotifierError = { fg = colors.text, bg = colors.background },
+  SnacksNotifierBorderError = { fg = colors.borderSubtle, bg = colors.background },
+  SnacksNotifierIconError = { fg = colors.error },
+  SnacksNotifierTitleError = { fg = colors.error },
+  SnacksNotifierInfo = { fg = colors.text, bg = colors.background },
+  SnacksNotifierBorderInfo = { fg = colors.borderSubtle, bg = colors.background },
+  SnacksNotifierIconInfo = { fg = colors.info },
+  SnacksNotifierTitleInfo = { fg = colors.info },
+  SnacksNotifierTrace = { fg = colors.text, bg = colors.background },
+  SnacksNotifierBorderTrace = { fg = colors.borderSubtle, bg = colors.background },
+  SnacksNotifierIconTrace = { fg = colors.accent },
+  SnacksNotifierTitleTrace = { fg = colors.accent },
+  SnacksNotifierWarn = { fg = colors.text, bg = colors.background },
+  SnacksNotifierBorderWarn = { fg = colors.borderSubtle, bg = colors.background },
+  SnacksNotifierIconWarn = { fg = colors.warning },
+  SnacksNotifierTitleWarn = { fg = colors.warning },
+  -- Dashboard
+  SnacksDashboardDesc = { fg = colors.info },
+  SnacksDashboardFooter = { fg = colors.primary },
+  SnacksDashboardHeader = { fg = colors.secondary },
+  SnacksDashboardIcon = { fg = colors.primary },
+  SnacksDashboardKey = { fg = colors.warning },
+  SnacksDashboardSpecial = { fg = colors.accent },
+  SnacksDashboardDir = { fg = colors.textMuted },
+  -- Profiler
+  SnacksProfilerIconInfo = { bg = colors.backgroundElement, fg = colors.primary },
+  SnacksProfilerBadgeInfo = { bg = colors.borderSubtle, fg = colors.primary },
+  SnacksScratchKey = "SnacksProfilerIconInfo",
+  SnacksScratchDesc = "SnacksProfilerBadgeInfo",
+  SnacksProfilerIconTrace = { bg = colors.backgroundElement, fg = colors.textMuted },
+  SnacksProfilerBadgeTrace = { bg = colors.borderSubtle, fg = colors.textMuted },
+  SnacksIndent = { fg = colors.textMuted, nocombine = true },
+  SnacksIndentScope = { fg = colors.primary, nocombine = true },
+  SnacksZenIcon = { fg = colors.accent },
+  SnacksInputIcon = { fg = colors.primary },
+  SnacksInputBorder = { fg = colors.warning },
+  SnacksInputTitle = { fg = colors.warning },
+  -- Picker
+  SnacksPickerInputBorder = { fg = colors.warning, bg = colors.backgroundPanel },
+  SnacksPickerInputTitle = { fg = colors.warning, bg = colors.backgroundPanel },
+  SnacksPickerBoxTitle = { fg = colors.warning, bg = colors.backgroundPanel },
+  SnacksPickerSelected = { fg = colors.accent },
+  SnacksPickerToggle = "SnacksProfilerBadgeInfo",
+  SnacksPickerPickWinCurrent = { fg = colors.text, bg = colors.accent, bold = true },
+  SnacksPickerPickWin = { fg = colors.text, bg = colors.backgroundElement, bold = true },
 }
+
+-- Add rainbow indent colors
+for i, color in ipairs(colors.rainbow) do
+  M.groups["SnacksIndent" .. i] = { fg = color, nocombine = true }
+end
 
 return M
