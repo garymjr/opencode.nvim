@@ -17,7 +17,7 @@ Using [lazy.nvim](https://github.com/folke/lazy.nvim):
 
 ```lua
 {
-  "your-username/opencode.nvim",
+  "garymjr/opencode.nvim",
   config = function()
     require("opencode").setup()
   end,
@@ -91,6 +91,7 @@ require("opencode").load()
 The theme is based on the OpenCode color palette with carefully selected colors for optimal readability and visual comfort.
 
 ### Dark Theme
+
 - Background: `#0a0a0a`
 - Primary: `#fab283`
 - Secondary: `#5c9cf5`
@@ -98,6 +99,7 @@ The theme is based on the OpenCode color palette with carefully selected colors 
 - Text: `#eeeeee`
 
 ### Light Theme
+
 - Background: `#ffffff`
 - Primary: `#3b7dd8`
 - Secondary: `#7b5bb6`
@@ -116,3 +118,4 @@ The theme is based on the OpenCode color palette with carefully selected colors 
 ## License
 
 MIT License
+
