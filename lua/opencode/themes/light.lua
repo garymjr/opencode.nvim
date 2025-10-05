@@ -1,4 +1,4 @@
-local colors = require("opencode-theme.colors").theme.light
+local colors = require("opencode.colors").theme.light
 
 local M = {}
 

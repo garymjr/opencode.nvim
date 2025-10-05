@@ -1,4 +1,4 @@
-# opencode-theme.nvim
+# opencode.nvim
 
 A Neovim theme based on the OpenCode color palette with light and dark variants.
 
@@ -17,9 +17,9 @@ Using [lazy.nvim](https://github.com/folke/lazy.nvim):
 
 ```lua
 {
-  "your-username/opencode-theme.nvim",
+  "your-username/opencode.nvim",
   config = function()
-    require("opencode-theme").setup()
+    require("opencode").setup()
   end,
 }
 ```
@@ -28,7 +28,7 @@ Using [lazy.nvim](https://github.com/folke/lazy.nvim):
 
 ```lua
 -- Basic setup
-require("opencode-theme").setup()
+require("opencode").setup()
 
 -- Load the colorscheme
 vim.cmd("colorscheme opencode")
@@ -37,7 +37,7 @@ vim.cmd("colorscheme opencode")
 ## Configuration
 
 ```lua
-require("opencode-theme").setup({
+require("opencode").setup({
   style = "dark", -- "dark" or "light"
   transparent = false, -- Enable transparent background
   terminal_colors = true, -- Apply colors to terminal
@@ -78,12 +78,12 @@ You can switch between light and dark themes:
 
 ```lua
 -- Switch to dark theme
-require("opencode-theme").config.style = "dark"
-require("opencode-theme").load()
+require("opencode").config.style = "dark"
+require("opencode").load()
 
 -- Switch to light theme
-require("opencode-theme").config.style = "light"
-require("opencode-theme").load()
+require("opencode").config.style = "light"
+require("opencode").load()
 ```
 
 ## Color Palette

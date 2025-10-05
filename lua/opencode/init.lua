@@ -189,8 +189,8 @@ end
 
 function M.load()
   local style = M.config.style
-  local theme_module = require("opencode-theme.themes." .. style)
-  local colors = require("opencode-theme.colors").theme[style]
+  local theme_module = require("opencode.themes." .. style)
+  local colors = require("opencode.colors").theme[style]
   
   local groups = vim.deepcopy(theme_module.groups)
   
@@ -209,7 +209,7 @@ function M.setup(opts)
   M.config = vim.tbl_deep_extend("force", default_config, opts or {})
   
   if vim.fn.has("nvim-0.7.0") == 0 then
-    vim.notify("opencode-theme.nvim requires Neovim 0.7.0 or higher", vim.log.levels.ERROR)
+    vim.notify("opencode.nvim requires Neovim 0.7.0 or higher", vim.log.levels.ERROR)
     return
   end
   

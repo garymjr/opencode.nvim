@@ -1,1 +1,1 @@
-require("opencode-theme").load()
+require("opencode").load()
