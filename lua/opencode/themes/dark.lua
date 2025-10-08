@@ -435,8 +435,8 @@ M.groups = {
   -- Profiler
   SnacksProfilerIconInfo = { bg = colors.backgroundElement, fg = colors.primary },
   SnacksProfilerBadgeInfo = { bg = colors.borderSubtle, fg = colors.primary },
-  SnacksScratchKey = "SnacksProfilerIconInfo",
-  SnacksScratchDesc = "SnacksProfilerBadgeInfo",
+  SnacksScratchKey = { bg = colors.backgroundElement, fg = colors.primary },
+  SnacksScratchDesc = { bg = colors.borderSubtle, fg = colors.primary },
   SnacksProfilerIconTrace = { bg = colors.backgroundElement, fg = colors.textMuted },
   SnacksProfilerBadgeTrace = { bg = colors.borderSubtle, fg = colors.textMuted },
   SnacksIndent = { fg = colors.textMuted, nocombine = true },
@@ -450,7 +450,7 @@ M.groups = {
   SnacksPickerInputTitle = { fg = colors.warning, bg = colors.backgroundPanel },
   SnacksPickerBoxTitle = { fg = colors.warning, bg = colors.backgroundPanel },
   SnacksPickerSelected = { fg = colors.accent },
-  SnacksPickerToggle = "SnacksProfilerBadgeInfo",
+  SnacksPickerToggle = { bg = colors.borderSubtle, fg = colors.primary },
   SnacksPickerPickWinCurrent = { fg = colors.text, bg = colors.accent, bold = true },
   SnacksPickerPickWin = { fg = colors.text, bg = colors.backgroundElement, bold = true },
 }
